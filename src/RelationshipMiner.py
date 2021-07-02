@@ -8,7 +8,7 @@ from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from nltk import pos_tag
 
-class RelashionshipMiner:
+class RelationshipMiner:
     def __init__(self):
 
         features = []

@@ -3,8 +3,8 @@ import FeatureX
 import time
 
 from FeatureX import *
-from RelMiner import RelashionshipMiner
-from MLRel import MachineLearnRelations
+from RelationshipMiner import RelationshipMiner
+from RelationshipSegregator import RelationshipSegregator
 
 start_time = time.time()
 
@@ -27,7 +27,7 @@ start_time = time.time()
 fx = featurex('CryptoCurrency1.pdf','2-14') ## input file 1
 fx.pre_process()
 fx.extract_candidates()
-RelashionshipMiner()
+RelationshipMiner()
 RelationshipSegregator()
 
 ## Move all results
@@ -36,7 +36,7 @@ fx.clean_workspace()
 fx = featurex('CryptoCurrency2.pdf','3-35') ## input file 2
 fx.pre_process()
 fx.extract_candidates()
-RelashionshipMiner()
+RelationshipMiner()
 RelationshipSegregator()
 
 ## Move all results
@@ -45,7 +45,7 @@ fx.clean_workspace()
 fx = featurex('CryptoCurrency3.pdf','1-14') ## input file 3
 fx.pre_process()
 fx.extract_candidates()
-RelashionshipMiner()
+RelationshipMiner()
 RelationshipSegregator()
 
 # Move all results
