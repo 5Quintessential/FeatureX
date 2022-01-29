@@ -159,12 +159,12 @@ class featurex:
         src_dir = os.path.join(os.getcwd())
         dest_dir = os.path.join(os.getcwd(), datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
         os.makedirs(dest_dir)
-        for txt_file in glob.glob(src_dir+"\\*.txt"):
+        for txt_file in glob.glob(os.path.join(src_dir, "*.txt")):
             if "NonsenseWords" not in txt_file:
                 shutil.move(txt_file, dest_dir)
-        for dot_file in glob.glob(src_dir+"\\*.dot"):
+        for dot_file in glob.glob(os.path.join(src_dir, "*.dot")):
             shutil.move(dot_file, dest_dir)
-        for png_file in glob.glob(src_dir+"\\*.png"):
+        for png_file in glob.glob(os.path.join(src_dir, "*.png")):
             shutil.move(png_file, dest_dir)
 
     def GetLastNoun(self):

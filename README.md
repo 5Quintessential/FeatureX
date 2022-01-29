@@ -3,12 +3,12 @@ Python library for extracting feature models from natural language specification
 
 ## Dependencies ##
 
-* itertools
-* matplotlib.pyplot
+* matplotlib
 * networkx
-* nltk
+* nltk (<3.5 for Python2)
 * Pattern
-* PdfMiner
+* PdfMiner (<20191010 for Python2)
+* pydot
 * scikit-learn
 
 **External tools used**
